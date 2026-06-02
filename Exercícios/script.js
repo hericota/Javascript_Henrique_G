@@ -95,18 +95,21 @@ function valor_maior_menor(num1,num2){
     }
 }
 
-function boletim(media){
+function boletim(){
+    let nota1= Number(prompt("fale a primeira nota"))
+    let nota2= Number(prompt("fale a segunda nota"))
+    let nota3= Number(prompt("fale a terceira nota"))
+    media= (nota1+nota2+nota3)/3
     if (media>=7){
-        console.log("você passou")
+        alert("você passou")
     }
-    else if(media<7 & media>6){
-        console.log("exame")
+    else if(media<7 & media>=6){
+        alert("exame")
     }
     else{
-        console.log("você reprovou")
+        alert("você reprovou")
     }
 }
-boletim(6.5)
 
 function maior_18(){
     let idade = Number(prompt("Informe a idade"))
@@ -117,4 +120,21 @@ function maior_18(){
         alert("menor de idade")
     }
 }
-maior_18()
+
+
+function comparado(){
+    let palavra1= String(prompt("informe a primeira palavra"))
+    let palavra2= String(prompt("informe a segunda palavra"))
+    if (palavra1 === palavra2){
+        alert("palavras iguas")
+        console.log("palavras iguas")
+    }
+    if (palavra1 !== palavra2){
+        alert("palavras desiguais")
+        console.log("palavras desiguais")
+    }
+}
+comparado()
+function imc(){
+    let peso == Number(prompt)
+}

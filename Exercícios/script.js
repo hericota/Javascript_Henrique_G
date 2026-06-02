@@ -35,39 +35,86 @@ function potencia(x, b) {
 }
 
 function par_ou_impar(Num) {
-    if (Num % 2 == 0){
-        console.log("numero",Num,"é par")
+    if (Num % 2 == 0) {
+        console.log("numero", Num, "é par")
     }
     else {
-        console.log("numero",Num,"é impar")
+        console.log("numero", Num, "é impar")
     }
 }
 par_ou_impar(10)
 
-function quadrado(num){
-    quadrado= num**2
+function quadrado(num) {
+    quadrado = num ** 2
     console.log(quadrado)
 }
-function cubo(num){
-    cubo= num**3
+function cubo(num) {
+    cubo = num ** 3
     console.log(cubo)
 }
-function celcius_fahrenheit(num){
-    F = (num * 9/5) + 32
-    console.log(num,"em fahrenheit é igual a",F)
-    return(F)
+function celcius_fahrenheit(num) {
+    F = (num * 9 / 5) + 32
+    console.log(num, "em fahrenheit é igual a", F)
+    return (F)
 }
-console.log((celcius_fahrenheit(20))+32)
+console.log((celcius_fahrenheit(20)) + 32)
 
-function media(num1,num2,num3){
-    resultado=(num1+num2+num3)/3
+function media(num1, num2, num3) {
+    resultado = (num1 + num2 + num3) / 3
     console.log(resultado)
 }
-function troco(valor_recebido,preco){
-    troco=valor_recebido-preco
-    if (troco > 0){console.log("devolver",troco,"R$")}
-    else if (troco<0){console.log("ta faltando",troco*-1,"R$")}
-    else{console.log("não precisa de troco")}
+function troco(valor_recebido, preco) {
+    troco = valor_recebido - preco
+    if (troco > 0) { console.log("devolver", troco, "R$") }
+    else if (troco < 0) { console.log("ta faltando", troco * -1, "R$") }
+    else { console.log("não precisa de troco") }
 
 }
-troco(20,21)
+troco(20, 21)
+
+function comparacoes(valor1, valor2){
+    if (valor1===valor2){
+        console.log("valores são iguais(===)")
+    }
+    else if (valor1==valor2){
+        console.log("valores são iguais porem tipos podem ser diferente(==)")
+    }
+    else{
+        console.log("valores são diferentes")
+    }
+}
+function valor_maior_menor(num1,num2){
+    if (num1 > num2){
+        console.log(num1,"é maior que",num2)
+    }
+    else if(num1<num2){
+        console.log(num2,"é maior que",num1)
+    }
+    else{
+        console.log("Numeros são iguais")
+    }
+}
+
+function boletim(media){
+    if (media>=7){
+        console.log("você passou")
+    }
+    else if(media<7 & media>6){
+        console.log("exame")
+    }
+    else{
+        console.log("você reprovou")
+    }
+}
+boletim(6.5)
+
+function maior_18(){
+    let idade = Number(prompt("Informe a idade"))
+    if (idade>=18){
+        alert("Maior de idade")
+    }
+    else{
+        alert("menor de idade")
+    }
+}
+maior_18()

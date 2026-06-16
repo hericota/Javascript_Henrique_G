@@ -4,7 +4,8 @@
 
 1. Declare uma variável chamada `nome` contendo seu nome e exiba-a no console.
 2. Crie uma constante chamada `PI` com o valor `3.14159` e tente exibir o valor.
-3. Declare três variáveis com `let` na mesma linha: `idade`, `altura` e `cidade`.
+3. Declare três variáveis com `let` na mesma linha: `idade`
+, `altura` e `cidade`.
 4. Use o operador `typeof` para descobrir e exibir o tipo do dado `true`.
 5. Crie uma variável `let` sem atribuir valor inicial e exiba-a para ver o resultado `undefined`.
 

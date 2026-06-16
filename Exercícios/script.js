@@ -1,3 +1,4 @@
+/*
 function soma(x, b) {
     soma = x + b
     console.log("Resultado da soma é", soma)
@@ -135,6 +136,51 @@ function comparado(){
     }
 }
 comparado()
-function imc(){
-    let peso == Number(prompt)
+let valorHora = Number(prompt("qual o valor da sua hora trabalhada?"))
+let quantidadeHoras = Number(prompt("Quantidades de horas trabalhadas"))
+let salario = valorHora * quantidadeHoras
+let imposto = 0
+let salarioFinal= 0
+let inss = salario * 10/100
+let fgts = salario * 11/100
+let descontoFgts = salario - fgts
+*/
+function questionario() {
+    let respostas_sim = 0
+    let resposta_1 = (prompt("Você telefonou para a vitima?(s/n)")).toLowerCase()
+    let resposta_2 = (prompt("Esteve no local do crime? (s/n)")).toLowerCase()
+    let resposta_3 = (prompt("Mora perto da vítima? (s/n)")).toLowerCase()
+    let resposta_4 = (prompt("Devia para a vítima? (s/n")).toLowerCase()
+    let resposta_5 = (prompt("Já trabalhou com a vítima? (s/n)")).toLowerCase()
+
+    if (resposta_1 === "s") {
+        respostas_sim +=1
+    }
+    if (resposta_2 === "s") {
+        respostas_sim +=1
+    }
+    if (resposta_3 === "s") {
+        respostas_sim +=1
+    }
+    if (resposta_4 === "s") {
+        respostas_sim +=1
+    }
+    if (resposta_5 === "s") {
+        respostas_sim +=1
+    }
+    alert(respostas_sim)
+    if (respostas_sim >= 5) {
+        alert("Assasino")
+    }
+    else if (respostas_sim >= 3) {
+        alert("Cumplice")
+    }
+    else if (respostas_sim == 2) {
+        alert("suspeita")
+    }
+    else {
+        alert("inocente")
+    }
+
 }
+questionario()

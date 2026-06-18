@@ -12,7 +12,7 @@ opcao = true
 while (opcao) {
     console.log("bom dia")
     let escolha = prompt("quer parar s/n").toLowerCase()
-    if (escolha == s) {
+    if (escolha == "s") {
         alert("tchau")
         opcao = false
     }

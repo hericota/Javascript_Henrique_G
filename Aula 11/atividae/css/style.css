@@ -1,3 +1,29 @@
-img{
-    transition: all 2s;
+body{
+    background-color:white;
+}
+h1{
+    justify-self: center;
+}
+#inputs{ justify-self: center;
+}
+#area_filme{
+border: 1px, solid, black;
+}
+#area_filme.card {
+    display: grid;
+    height: auto;
+    margin: 50px;
+    flex-direction: row;
+    padding: 40px;
+    grid-template-columns: repeat(3, 1fr); 
+
+}
+
+#card_filme.card-body {
+    margin: 10px;
+    border-radius: 20px;
+    border: 5px, solid, black;
+    padding: 20px;
+    max-width:300px;
+
 }
